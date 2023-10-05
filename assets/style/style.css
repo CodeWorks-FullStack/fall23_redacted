@@ -1,0 +1,39 @@
+/* BASIC STYLES HERE */
+.case {
+  border: 2.5px black solid;
+  height: 17.5dvh;
+  width: 65%;
+  border-radius: 5px;
+  background-color: rgb(127, 39, 39);
+}
+
+.handle {
+  border-top: 2.5px black solid;
+  border-left: 2.5px black solid;
+  border-right: 2.5px black solid;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 2.5dvh;
+  width: 25%;
+  background-color: rgb(127, 39, 39);
+}
+
+.handle-hole {
+  height: 50%;
+  width: 90%;
+  background-color: white;
+  border-top: 2.5px black solid;
+  border-left: 2.5px black solid;
+  border-right: 2.5px black solid;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.briefcase:hover > div {
+  box-shadow: 0px 0px 5px black;
+  cursor: pointer;
+}
+
+.textarea-height {
+  height: 50dvh;
+}
