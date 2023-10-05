@@ -19,9 +19,11 @@ function _drawActiveCase() {
   const activeCase = AppState.activeCase
   
   if(activeCase.unlocked == false) {
+    // NOTE MAKE SURE IF THE CASE ISN'T UNLOCKED TO RENDER NO COUNT/THE "UNLOCKED" CASE TEMPLATE
     setHTML("cases-count", "")
     setHTML("cases", activeCase.ActiveCaseTemplate)
   } else {
+    // NOTE IF IT IS UNLOCKED, RENDER THE UNLOCKED CASE TEMPLATE
     setHTML("cases-count", "")
     setHTML("cases", activeCase.UnlockedCaseTemplate)
   }
