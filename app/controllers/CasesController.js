@@ -53,9 +53,12 @@ export class CasesController{
 
   unlockCase() {
     casesService.unlockCase()
-
+    // NOTE USE TO GO DOWN TO THE TEXT AREA WHEN UNLOCKED
+    // GRADE THE REPORT ELEMENT
     const reportElem = document.getElementById('case-contents')
+    // NOTE USE BUILT IN JAVASCRIPT FUNCTION TO FOCUS ON THE TEXT AREA
     reportElem.focus()
+    // NOTE THIS FUNCTION IS SETTING THE CURSOR TO THE END OF THE CURRENT TEXT
     reportElem.setSelectionRange(reportElem.value.length, reportElem.value.length)
   }
 
